@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+@media only screen and (max-width :480px) {
+    .head {
+        background-color: #38220f;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+        mix-blend-mode: screen;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fffbf2;
+        list-style: none;
+        padding: 5px;
+        font-size: 15px;
+        color: #38220f;
+        font-weight: 300;
+        border-bottom: 0.5px solid rgb(0, 0, 0, 0.8);
+    }
+    .main {
+        background-color: ;
+    }
+    .info {
+        width: 100%;
+        height: auto;
+    }
+    .card {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5px;
+        background-color: #ffcd58;
+        position: relative;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    .im {
+        top: 10px;
+        position: absolute;
+        border-radius: 25px;
+        width: 90%;
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    .containt {
+        position: absolute;
+        width: 300px;
+        height: 90px;
+        background-color: white;
+        color: black;
+        font-size: px;
+        bottom: 10px;
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+    h5 {
+        font-size: 11px;
+        flex-direction: row;
+        padding: 4px;
+        font-weight: bold;
+    }
+    h4 {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        font-size: 5.5px;
+        flex: row;
+        padding: 4px;
+    }
+    button {
+        font-size: 10px;
+        position: absolute;
+        width: 100px;
+        height: 20px;
+        top: 30px;
+        left: 49px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 0 4px 0 0;
+    }
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.349);
+        color: black;
+        border: none;
+    }
+    .slider {
+        width: 100%;
+        height: 350px;
+        background-color: #fbe4d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 350px;
+        height: 250px;
+        background-color: ;
+        background-image: url("https://cdn.zeptonow.com/production///tr:w-600,ar-1080-1080,pr-true,f-auto,q-80/cms/product_variant/aafe065f-d05e-4bc8-8be9-ad029317fb2a.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation-name: myani;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        border-radius: 25px;
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    @keyframes myani {
+        0% {
+            background-image: url("https://richesm.com/wp-content/uploads/2022/10/Nescafe-Fine-Blend-Instant-Coffee-Jar-100-grams_2.jpg.webp");
+        }
+        15% {
+            background-image: url("https://down-ph.img.susercontent.com/file/6351fcb71ee7d9ff5b75aa18852d6125");
+        }
+        30% {
+            background-image: url("https://www.bigbasket.com/media/uploads/p/xl/40129633_4-nescafe-ready-to-drink-coffee-flavoured-milk-iced-latte.jpg");
+        }
+        45% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtKVVJimGlA5j845hdJ4y0A0p08NlWGkZygC2aiMjm5M8kjpoNSgZS0iHOjRFd7feubM&usqp=CAU");
+        }
+        60% {
+            background-image: url("https://s7d6.scene7.com/is/image/bjs/172890");
+        }
+        75% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBfUNuj5XABXvsh6ePgvdHCvpDE1SVOa343H6RGHaZINLcPVDA_UXRBeRAs0_8lEavSs&usqp=CAU");
+        }
+        90% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcXa0hA179GBM9pZkr8Z8orLpC2pKUSHywz3budz5_T5v0O3L4suU9TRP81D_-KilYM0&usqp=CAU");
+        }
+    }
+    .coffees {
+        max-height: auto;
+        border: 1px solid #ddd;
+        display: flex;
+        overflow-x: auto;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .coffees::-webkit-scrollbar {
+        width: 0;
+    }
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+    .contant {
+        min-width: 150px;
+        height: 250px;
+        line-height: ;
+        background-color: whitesmoke;
+        margin-left: 10px;
+    }
+    h2 {
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 8px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+    h6 i {
+        color: gold;
+    }
+    p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    a {
+        font-size: 12px;
+        margin-left: 10px;
+        color: black;
+    }
+    a i {
+        color: red;
+        font-size: 10px;
+    }
+    .all {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: #38220f;
+    }
+    .logo2 {
+        width: 300px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -30px;
+        margin-left: 110px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .footer-section h3 {
+        color: #ffcd58;
+        margin-bottom: 5px;
+        margin-left: 135px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-section p {
+        color: white;
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin-left: ;
+        margin-top: 10px;
+    }
+    .socials {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .socials li a i {
+        color: ;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .footer-section li {
+        color: white;
+        margin-left: px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .footer-section a {
+        color: white;
+    }
+    .footer-bottom {
+        padding-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .footer-bottom p {
+        color: white;
+        margin-left: 35px;
+    }
+    .logo2 {
+        width: 150px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        mix-blend-mode: screen;
+    }
+    .logo2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:1439px) {
+    .head {
+        background-color: #38220f;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+        mix-blend-mode: screen;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fffbf2;
+        list-style: none;
+        padding: 5px;
+        font-size: 15px;
+        color: #38220f;
+        font-weight: 300;
+        border-bottom: 0.5px solid rgb(0, 0, 0, 0.8);
+    }
+    .main {
+        background-color: ;
+    }
+    .info {
+        width: 100%;
+        height: auto;
+    }
+    .card {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5px;
+        background-color: #ffcd58;
+        position: relative;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    .im {
+        top: 25px;
+        position: absolute;
+        border-radius: 25px;
+        width: 90%;
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    .containt {
+        position: absolute;
+        width: 600px;
+        height: 180px;
+        background-color: white;
+        color: black;
+        font-size: px;
+        bottom: 10px;
+        border: 3px solid black;
+        border-radius: 8px;
+    }
+    h5 {
+        font-size: 22px;
+        flex-direction: row;
+        margin-top: 30px;
+        padding: px;
+        font-weight: bold;
+        text-align: center;
+    }
+    h4 {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        font-size: 15px;
+        flex: row;
+        padding: 4px;
+    }
+    button {
+        font-size: 18px;
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        top: 50px;
+        left: 150px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 0 4px 0 0;
+    }
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.349);
+        color: black;
+        border: none;
+    }
+    .slider {
+        width: 100%;
+        height: 350px;
+        background-color: #fbe4d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 350px;
+        height: 250px;
+        background-color: ;
+        background-image: url("https://cdn.zeptonow.com/production///tr:w-600,ar-1080-1080,pr-true,f-auto,q-80/cms/product_variant/aafe065f-d05e-4bc8-8be9-ad029317fb2a.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        animation-name: myani;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        border-radius: 35px 0px 35px 0px;
+        border: 5px solid red;
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+    }
+    @keyframes myani {
+        0% {
+            background-image: url("https://richesm.com/wp-content/uploads/2022/10/Nescafe-Fine-Blend-Instant-Coffee-Jar-100-grams_2.jpg.webp");
+        }
+        15% {
+            background-image: url("https://down-ph.img.susercontent.com/file/6351fcb71ee7d9ff5b75aa18852d6125");
+        }
+        30% {
+            background-image: url("https://www.bigbasket.com/media/uploads/p/xl/40129633_4-nescafe-ready-to-drink-coffee-flavoured-milk-iced-latte.jpg");
+        }
+        45% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtKVVJimGlA5j845hdJ4y0A0p08NlWGkZygC2aiMjm5M8kjpoNSgZS0iHOjRFd7feubM&usqp=CAU");
+        }
+        60% {
+            background-image: url("https://s7d6.scene7.com/is/image/bjs/172890");
+        }
+        75% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBfUNuj5XABXvsh6ePgvdHCvpDE1SVOa343H6RGHaZINLcPVDA_UXRBeRAs0_8lEavSs&usqp=CAU");
+        }
+        90% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcXa0hA179GBM9pZkr8Z8orLpC2pKUSHywz3budz5_T5v0O3L4suU9TRP81D_-KilYM0&usqp=CAU");
+        }
+    }
+    .coffees {
+        max-height: auto;
+        border: 1px solid #ddd;
+        display: flex;
+        overflow-x: auto;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .coffees::-webkit-scrollbar {
+        width: 0;
+    }
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+    .contant {
+        min-width: 150px;
+        height: 250px;
+        line-height: ;
+        background-color: whitesmoke;
+        margin-left: 10px;
+    }
+    h2 {
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 8px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+    h6 i {
+        color: gold;
+    }
+    p {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    a {
+        font-size: 12px;
+        margin-left: 10px;
+        color: black;
+    }
+    a i {
+        color: red;
+        font-size: 10px;
+    }
+    .all {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: #38220f;
+    }
+    .logo2 {
+        width: 300px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -30px;
+        margin-left: 600px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .footer-section h3 {
+        color: #ffcd58;
+        margin-bottom: 5px;
+        font-size: 25px;
+        /* margin-left: 625px; */
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-section p {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-left: ;
+        margin-top: 10px;
+    }
+    .socials {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .socials li a i {
+        color: ;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .footer-section li {
+        color: white;
+        margin-left: px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .footer-section a {
+        color: white;
+    }
+    .footer-bottom {
+        padding-bottom: 20px;
+        font-size: 0.9em;
+    }
+    .footer-bottom p {
+        color: white;
+        text-align: center;
+    }
+    .logo2 {
+        width: 150px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        mix-blend-mode: screen;
+    }
+    .logo2 img {
+        width: 100%;
+        height: auto;
+    }
+}
